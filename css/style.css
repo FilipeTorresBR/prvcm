@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Quicksand;
+  src: url(Quicksand-Regular.ttf);
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -34,7 +38,9 @@
 	margin-left: 2vw;
 }
 #main{
-	background-color: #2a2a2e;
+	background-image: url('../img/back2.jpg');	
+	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100vw;
 	height: 100vh;
 	box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
@@ -54,25 +60,19 @@
 }
 @keyframes foguete{
 	0% {left:0vw; bottom:0vh;}
-	10% {left: 10vw; bottom: 10vh;}
-	20% {left:20vw; bottom:20vh;}
-	30% {left: 30vw; bottom: 30vh;}
-	40% {left: 40vw; bottom: 40vh;}
-	50% {left: 50vw; bottom: 50vh;}
-	60% {left: 60vw; bottom: 60vh;}
-	70% {left: 70vw; bottom: 70vh;}
-	80% {left: 80vw; bottom: 80vh;}
-	90% {left: 90vw; bottom: 90vh;}
-	100% {left:100vw; bottom:100vh;}
+	100% {left:60vw; bottom:70vh;}
 }
 #foguete{
+	left:60vw; bottom:70vh;
 	position: relative;
 	transform: rotate(45deg);
-	width: 180px;
-	height: 180px;
+	width: 420px;
+	height: 420px;
 	transform: rotate(45deg);
 	animation-name: foguete;
-	animation-duration: 2.5s;
+	animation-duration: 3s;
+	animation-timing-function: linear;	
+
 }
 #main-text{
 	color: #fff;
@@ -85,7 +85,54 @@
 	font-weight: bold;
 }
 #page2{
-	background-color: #f80009;
+	background-color: #2a2a2e;
 	width: 100vw;
 	height: 100vh;
+}
+#planos{
+	background-color: #f80009;
+	width: 90vw;
+	height: 60vh;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 30vh;  
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 2vw;
+	box-shadow: 0 0 200px rgba(0,0,0,0.5);
+}
+#planos-header{
+	color: #fff;
+	
+}
+#planos-box{
+	border-radius: 5px;
+	background-color: #fff;
+	width: 20vw;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	padding: 2vw 0;
+	font-size: 10vh;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+#valores-box{
+	border-radius: 5px;
+	background-color: #f80009;
+	width: 18vw;
+	height: 15vh;
+	margin: auto;
+	color: white;
+	font-size: 7vh;
+	display: flex;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#velocidade{
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
 }
